@@ -1,3 +1,8 @@
 # data-structures-and-algorithms
 
-![whitepoardchallenge](array-reverse.png/Whiteboard.png)
+
+
+| problem type | photo |
+| :---: | :---: |
+|array-reverse | [link](array-reverse.png/Whiteboard.png) |
+| array-insert-shift | [link](array-insert-shift/array-insert-shift.png) |
