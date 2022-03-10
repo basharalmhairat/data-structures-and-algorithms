@@ -25,6 +25,6 @@ adds a new node with the given new value immediately after the first node that h
  What is the Big O space/time for this approach?
  O(1)
 
-## Solution![addAfter,Before]
+## Solution[addAfter,Before](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/main/Linking/app/src/main/java/Linking/LinkedList.java)
 
-[LinkToMyCode](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/main/Linking/app/src/main/java/Linking/LinkedList.java)
+
