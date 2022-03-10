@@ -5,16 +5,59 @@ package Linking;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.function.Supplier;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class appListTest {
     @Test
-    public void testEmptyLinkedList() {
-        System.out.println("testing empty linked list");
-        LinkedList list = new LinkedList();
-        assertNull("testEmptyLinkedList should be empty.", (Supplier<String>) list.head);
-        System.out.println("finished test");
+    public void testInsertAfterMiddle(){
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert( 3);
+        list.insert( 2);
+        list.insert( 1);
+
+        list.insertAfter( 2, 4);
+        assertEquals("{1}->{2}->{4}->3",  list.toString());
+    } @Test
+    public void testInsertAfterLast(){
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert( 3);
+        list.insert( 2);
+        list.insert( 1);
+
+        list.insertAfter( 1, 4);
+        assertEquals("{1}->{2}->{3}->4",  list.toString());
+    }
+
+    @Test
+    public void testInsertBeforeLast(){
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert( 3);
+        list.insert( 2);
+        list.insert( 1);
+
+        list.insertBefore( 3 ,4);
+        assertEquals("{1}->{2}->{4}->3",  list.toString());
+    }
+
+    @Test
+    public void testInsertBeforeMiddle(){
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert( 3);
+        list.insert( 2);
+        list.insert( 1);
+
+        list.insertBefore( 2, 4);
+        assertEquals("{1}->{4}->{2}->3",  list.toString());
+    }
+
+    @Test
+    public void testInsertAppendLast(){
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert( 3);
+        list.insert( 2);
+        list.insert( 1);
+
+        list.append( 4);
+        assertEquals("{1}->{2}->{3}->4",  list.toString());
     }
 }
