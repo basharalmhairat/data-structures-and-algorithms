@@ -60,4 +60,52 @@ public class appListTest {
         list.append( 4);
         assertEquals("{1}->{2}->{3}->4",  list.toString());
     }
+
+    @Test
+    public void testKthEndHappy() {
+        LinkedList<Integer> list = new LinkedList<>();
+        list.insert( 1);
+        list.insert( 2);
+        list.insert( 3);
+        list.insert( 5);
+        assertEquals(3, list.kthEnd(2));
+    }
+
+    @Test
+    public void testKthEndGreaterThanSize() {
+        LinkedList<Integer> list = new LinkedList<>();
+        list.insert( 1);
+        list.insert( 2);
+        list.insert( 3);
+        list.insert( 5);
+        assertEquals("you interred length bigger than the original length" ,list.kthEnd( 6));
+    }
+
+    @Test
+    public void testKthEnd_KLesThanZero() {
+        LinkedList<Integer> list = new LinkedList<>();
+        list.insert( 1);
+        list.insert( 2);
+        list.insert( 3);
+        list.insert( 5);
+        assertEquals("you interred length less than 0", list.kthEnd(-1));
+    }
+
+    @Test
+    public void testKthEnd_KEqualsSize() {
+        LinkedList<Integer> list = new LinkedList<>();
+        list.insert( 1);
+        list.insert( 2);
+        list.insert( 3);
+        list.insert( 5);
+        assertEquals("you interred length =  original length", list.kthEnd( 4));
+    }
+
+    @Test
+    public void testKthEnd_SizeEqualsOne() {
+        LinkedList<Integer> list = new LinkedList<>();
+        list.insert( 1);
+        assertEquals("you interred length =  original length", list.kthEnd( 1));
+    }
+
 }
