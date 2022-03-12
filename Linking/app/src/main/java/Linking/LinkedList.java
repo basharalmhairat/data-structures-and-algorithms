@@ -16,7 +16,7 @@ public class LinkedList<T> {
         }
 
         public Boolean includes(T x) {
-            Node pointer = this.head;
+            Node<T> pointer = this.head;
             while (pointer != null) {
                 if (pointer.value == x) {
                     System.out.println("true");

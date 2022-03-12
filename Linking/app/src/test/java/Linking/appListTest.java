@@ -107,5 +107,11 @@ public class appListTest {
         list.insert( 1);
         assertEquals("you interred length =  original length", list.kthEnd( 1));
     }
+    @Test
+    public void testKthEnd_SizeEquals1() {
+        LinkedList<Integer> list = new LinkedList<>();
+        list.insert( 1);
+        assertEquals(1, list.kthEnd( 0));
+    }
 
 }
