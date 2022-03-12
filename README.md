@@ -27,4 +27,21 @@ adds a new node with the given new value immediately after the first node that h
 
 ## Solution[addAfter,Before](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/main/Linking/app/src/main/java/Linking/LinkedList.java)
 
+# Challenge Summary
+Write the following method for the Linked List class:
+
+kth from end
+argument: a number, k, as a parameter.
+Return the node’s value that is k places from the tail of the linked list.
+You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+## Whiteboard Process
+![Kth](https://user-images.githubusercontent.com/97823170/158013728-ae5d6332-3b6f-4112-a13a-ca65170f3c6e.png)
+
+
+## Approach & Efficiency
+ What is the Big O space/time for this approach?
+ T: O(n)
+ S: O(1)
+## Solution[KthFromeEnd](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/main/Linking/app/src/main/java/Linking/LinkedList.java)
+
 
