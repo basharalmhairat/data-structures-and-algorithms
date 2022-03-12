@@ -1,7 +1,5 @@
 package Linking;
-
-
-    public class LinkedList<T> {
+public class LinkedList<T> {
         Node<T> head;
 
         public LinkedList() {
@@ -18,7 +16,7 @@ package Linking;
         }
 
         public Boolean includes(T x) {
-            Node pointer = this.head;
+            Node<T> pointer = this.head;
             while (pointer != null) {
                 if (pointer.value == x) {
                     System.out.println("true");
@@ -84,6 +82,33 @@ package Linking;
             pointer.next = newNext;
     }
 
+
+
+    public String kthEnd( int k) {
+        Node<T> node1 = head;
+        Node<T> node2 = head;
+        int count = 0;
+        while (node1 != null) {
+            if (count == (k + 1)) {
+                break;
+            }
+            count += 1;
+            node1 = node1.next;
+        }
+        if (count == (k + 1)) {
+            while (node1 != null) {
+                node1 = node1.next;
+                node2 = node2.next;
+            }
+//            System.out.println((int) node2.value);
+            return (String) node2.value;
+        }
+
+        else if (k<count){return "you interred length less than 0";};
+         if(k>count){return "you interred length bigger than the original length";}
+       else  return "you interred length =  original length";
+
+    }
     }
     
 
