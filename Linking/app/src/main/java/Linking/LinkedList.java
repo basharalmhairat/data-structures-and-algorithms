@@ -39,7 +39,7 @@ public class LinkedList<T> {
                 }
                 pointer = pointer.next;
             }
-            System.out.println(out);
+//            System.out.println(out);
             return out.toString();
         }
 
@@ -100,13 +100,36 @@ public class LinkedList<T> {
                 node1 = node1.next;
                 node2 = node2.next;
             }
-//            System.out.println((int) node2.value);
+            System.out.println((int) node2.value);
             return (String) node2.value;
         }
 
         else if (k<count){return "you interred length less than 0";};
          if(k>count){return "you interred length bigger than the original length";}
        else  return "you interred length =  original length";
+
+    }
+
+    public  LinkedList zipLists(LinkedList first, LinkedList second) {
+        Node pointer1 = first.head;
+        Node pointer2 = second.head;
+
+        while (pointer1.next != null && pointer2.next != null) {
+            Node point1;
+            Node point2;
+
+            point1 = pointer1.next;
+            point2 = pointer2.next;
+            pointer2.next = point1;
+            pointer1.next = pointer2;
+
+            pointer1 = point1;
+            pointer2 = point2;
+        }
+        if (pointer2.next == null) {pointer2.next = pointer1.next;pointer1.next = pointer2;}
+        if (pointer1.next == null) {pointer1.next = pointer2;}
+//        System.out.println(second);// just to see the different
+        return first;
 
     }
     }
