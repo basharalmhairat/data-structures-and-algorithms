@@ -7,6 +7,7 @@ package Linking;
 
         public Node(T value){
             this.value = value;
+            next=null;
         }
     }
 

@@ -5,6 +5,7 @@ package Linking;
 
 import org.junit.jupiter.api.Test;
 
+//import static Linking.LinkedList.zipLists;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class appListTest {
@@ -112,6 +113,23 @@ public class appListTest {
         LinkedList<Integer> list = new LinkedList<>();
         list.insert( 1);
         assertEquals(1, list.kthEnd( 0));
+    }
+
+    @Test
+    public void testMergeList(){
+        LinkedList<Integer> listOne = new LinkedList<>();
+        listOne.insert( 7);
+        listOne.insert( 5);
+        listOne.insert( 3);
+        listOne.insert( 1);
+
+        LinkedList<Integer> listTwo = new LinkedList<>();
+        listTwo.insert( 8);
+        listTwo.insert( 6);
+        listTwo.insert( 4);
+        listTwo.insert( 2);
+
+        assertEquals("{1}->{2}->{3}->{4}->{5}->{6}->{7}->8",listOne.zipLists(listOne,listTwo).toString());
     }
 
 }
