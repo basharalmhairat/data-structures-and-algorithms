@@ -122,8 +122,25 @@ class AppTest {
         String actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
 
-
         }
+        @Test
+    public void teststackQueuePseudoDequeue() {
+    stackQueuePseudo<Integer>Pseudo=new stackQueuePseudo<>();
+Pseudo.enqueue(3);
+Pseudo.enqueue(2);
+Pseudo.enqueue(1);
+        Pseudo.dequeue();
+            assertEquals("2-->1-->null", Pseudo.front.toString());
     }
 
+    @Test
+    public void teststackQueuePseudoEnqueue() {
+        stackQueuePseudo<Integer>Pseudo=new stackQueuePseudo<>();
+        Pseudo.enqueue(3);
+        Pseudo.enqueue(2);
+        Pseudo.enqueue(1);
+        assertEquals("1-->2-->3-->null", Pseudo.back.toString());
+    }
+
+    }
 

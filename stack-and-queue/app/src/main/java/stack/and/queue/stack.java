@@ -2,7 +2,7 @@ package stack.and.queue;
 
 public class stack<T> {
 
-    private Node<T> top;
+    Node<T> top;
 
     public void push( T value){
         Node<T> new_node = new Node<>();
