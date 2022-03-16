@@ -11,39 +11,21 @@ The class should contain the following methods:
 Create a Queue class that has a front property. It creates an empty Queue when instantiated.
 This object should be aware of a default empty value assigned to front when the queue is created.
 The class should contain the following methods:
-
-
 ## Approach & Efficiency
 T:O(1)
 S:O(N)
 ## API
 ### Stack:
-
-#### push
-adds a new node with that value to the top of the stack with an O(1) Time performance.
-#### pop
-Returns: the value from node from the top of the stack.
-Removes the node from the top of the stack.
-Should raise exception when called on empty stack.
-#### peek
-Returns: Value of the node located at the top of the stack.
-Should raise exception when called on empty stack.
-#### is empty
-Returns: Boolean indicating whether or not the stack is empty.
+#### push: adds a new node with that value to the top of the stack with an O(1) Time performance.
+#### pop: Returns: the value from node from the top of the stack.Removes the node from the top of the stack.Should raise exception when called on empty stack.
+#### peek: Returns: Value of the node located at the top of the stack.Should raise exception when called on empty stack.
+#### is empty: Returns: Boolean indicating whether or not the stack is empty.
 
 ### Queue
-
-#### enqueue:
-adds a new node with that value to the back of the queue with an O(1) Time performance.
-#### dequeue
-Returns: the value from node from the front of the queue.
-Removes the node from the front of the queue.
-Should raise exception when called on empty queue.
-#### peek
-Returns: Value of the node located at the front of the queue.
-Should raise exception when called on empty stack.
-#### is empty
-Returns: Boolean indicating whether or not the queue is empty.
+#### enqueue: adds a new node with that value to the back of the queue with an O(1) Time performance.
+#### dequeue: Returns: the value from node from the front of the queue.Removes the node from the front of the queue.Should raise exception when called on empty queue.
+#### peekReturns: Value of the node located at the front of the queue,Should raise exception when called on empty stack.
+#### is empty: Returns: Boolean indicating whether or not the queue is empty.
 
 ---
 
@@ -64,4 +46,4 @@ Big O
 S: O(N)
 T: O(N)
 ## Solution
-[linke to my solved code]()
+[linke to my solved code](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/main/stack-and-queue/app/src/main/java/stack/and/queue/stackQueuePseudo.java)
