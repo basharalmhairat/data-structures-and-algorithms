@@ -8,7 +8,7 @@
 | array-insert-shift | [link](array-insert-shift/array-insert--shift.png) |
 | arrray-binary-search | [link](arrray-binary-search/binary-search.png) |
 | Linked-lest | [link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/Linking) |
-
+|stack-and-queue|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/stack-and-queue)|
 
 # Challenge Summary
 Write the following methods for the Linked List class:
