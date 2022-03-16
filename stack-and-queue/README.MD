@@ -44,3 +44,24 @@ Returns: Value of the node located at the front of the queue.
 Should raise exception when called on empty stack.
 #### is empty
 Returns: Boolean indicating whether or not the queue is empty.
+
+---
+
+# Challenge Summary
+Create a new class called pseudo queue.
+Do not use an existing Queue.
+Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below),
+Internally, utilize 2 Stack instances to create and manage the queue
+
+
+## Whiteboard Process
+![enqueueanddequeuepesedo](https://user-images.githubusercontent.com/97823170/158697373-18da44dc-4d9a-40b2-9182-927d6de0f272.png)
+
+
+## Approach & Efficiency
+Big O
+
+S: O(N)
+T: O(N)
+## Solution
+[linke to my solved code]()
