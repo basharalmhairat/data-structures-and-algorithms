@@ -9,6 +9,55 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class appListTest {
+
+    @Test
+    public void testInsertEmpty() {
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        assertEquals("", list.toString());
+    }
+
+    @Test
+    public void testInsertOneValueToList() {
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert( 3);
+
+        assertEquals("3", list.toString());
+    }
+
+    @Test
+    public void testInsertMultipleValueToList() {
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert( 3);
+        list.insert( 2);
+        assertEquals("{2}->3", list.toString());
+    }
+
+    @Test
+    public void testIncludeTrueValue() {
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert( 3);
+        list.insert( 2);
+        assertEquals("true", list.includes(2).toString());
+    }
+
+    @Test
+    public void testIncludeFalseValue() {
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert( 3);
+        list.insert( 2);
+        assertEquals("false", list.includes(5).toString());
+    }
+    @Test
+    public void testReturnCollectionValues(){
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert( 4);
+        list.insert( 3);
+        list.insert( 2);
+        list.insert( 1);
+
+        assertEquals("{1}->{2}->{3}->4",  list.toString());
+    }
+
     @Test
     public void testInsertAfterMiddle(){
         LinkedList<Integer> list = new LinkedList<Integer>();
