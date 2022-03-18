@@ -2,9 +2,9 @@ package Linking;
 public class LinkedList<T> {
         Node<T> head;
 
-        public LinkedList() {
-            this.head = null;
-        }
+//        public LinkedList() {
+//            this.head = null;
+//        }
 
         public void insert(T v) {
             Node<T> new_node = new Node<T>(v);
@@ -44,42 +44,73 @@ public class LinkedList<T> {
         }
 
         public void append(T v) {
-            Node<T> pointer = this.head;
+            try
+            {
+                Node<T> pointer = head;
 
-            while (pointer.next != null) {
-                pointer = pointer.next;
+                while (pointer.next != null) {
+                    pointer = pointer.next;
+                }
+                Node<T> nextNode = new Node<>(v);
+                pointer.next = nextNode;
+
             }
-            pointer.next = new Node<T>(v);
+            catch(NullPointerException e)
+            {
+                System.out.print("NullPointerException Caught");
+            }
         }
 
         public void insertBefore(T v, T nV) {
-            Node<T> pointer =head;
-            while (pointer.next != null) {
-                if (pointer.next.value == v) {
-                    Node<T> newNode = new Node<T>(nV);
+            Node <T> newNode = new Node(nV);
+            Node <T> pointer = head;
+            Node <T> previous = head;
 
-                    newNode.next = pointer.next;
-                    pointer.next = newNode;
+            if (includes(v))
+            {
+                if (head.value == v)
+                {
+                    newNode.next = head;
+                    head = newNode;
                     return;
                 }
-                pointer = pointer.next;
+                while (pointer != null)
+                {
+                    if (pointer.value == v)
+                    {
+                        newNode.next = pointer;
+                        previous.next = newNode;
+                        return;
+                    }
+                    previous = pointer;
+                    pointer = pointer.next;
+                }
             }
         }
 
         public void insertAfter(T v, T nV) {
 
-            Node<T> pointer = head;
+            Node <T> newNode = new Node(nV);
+            Node <T> pointer = head;
 
-            while (pointer.next != null) {
-                pointer = pointer.next;
-                if (pointer.value == v) {
-                    break;
+            if (includes(v))
+            {
+                if (head == v)
+                {
+                    head.next = newNode;
+                    return;
+                }
+                while (pointer != null)
+                {
+                    if (pointer.value == v)
+                    {
+                        newNode.next = pointer.next;
+                        pointer.next = newNode;
+                        return;
+                    }
+                    pointer = pointer.next;
                 }
             }
-            T temp = (T) pointer.next;
-            Node<T> newNext = new Node<T>(nV);
-            newNext.next = (Node<T>) temp;
-            pointer.next = newNext;
     }
 
 

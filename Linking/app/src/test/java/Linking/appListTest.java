@@ -67,15 +67,42 @@ public class appListTest {
 
         list.insertAfter( 2, 4);
         assertEquals("{1}->{2}->{4}->3",  list.toString());
-    } @Test
-    public void testInsertAfterLast(){
+    }
+    @Test
+    public void testInsertAfterLast() {
         LinkedList<Integer> list = new LinkedList<Integer>();
-        list.insert( 3);
-        list.insert( 2);
-        list.insert( 1);
+        list.insert(3);
+        list.insert(2);
+        list.insert(1);
 
-        list.insertAfter( 1, 4);
-        assertEquals("{1}->{2}->{3}->4",  list.toString());
+        list.insertAfter(1, 4);
+        assertEquals("{1}->{2}->{3}->4", list.toString());
+    }
+
+    @Test
+        public void testInsertAfterHead() {
+            LinkedList<Integer> list = new LinkedList<Integer>();
+            list.insert(3);
+            list.insert(2);
+            list.insert(1);
+            list.insertAfter(1, 4);
+            assertEquals("{1}->{4}->{2}->3", list.toString());
+        }
+
+    @Test
+    public void testInsertBeforeHead() {
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert(3);
+        list.insert(2);
+        list.insert(1);
+        list.insertBefore(1, 4);
+        assertEquals("{4}->{1}->{2}->3", list.toString());
+    }
+        @Test
+    public void testAppendEmpty(){
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.append( 1 );
+        assertEquals("",  list.toString());
     }
 
     @Test
