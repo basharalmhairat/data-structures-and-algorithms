@@ -202,5 +202,14 @@ public class appListTest {
 
         assertEquals("{1}->{2}->{3}->{4}->{5}->{6}->{7}->8",listOne.zipLists(listOne,listTwo).toString());
     }
+    @Test
+    public void testMergeListEmpty(){
+        LinkedList<Integer> listOne = new LinkedList<>();
 
+
+        LinkedList<Integer> listTwo = new LinkedList<>();
+
+
+        assertEquals("",listOne.zipLists(listOne,listTwo).toString());
+    }
 }

@@ -141,26 +141,35 @@ public class LinkedList<T> {
     }
 
     public  LinkedList zipLists(LinkedList first, LinkedList second) {
-        Node pointer1 = first.head;
-        Node pointer2 = second.head;
+        try {
+            Node pointer1 = first.head;
+            Node pointer2 = second.head;
 
-        while (pointer1.next != null && pointer2.next != null) {
-            Node point1;
-            Node point2;
+            while (pointer1.next != null && pointer2.next != null) {
+                Node point1;
+                Node point2;
 
-            point1 = pointer1.next;
-            point2 = pointer2.next;
-            pointer2.next = point1;
-            pointer1.next = pointer2;
+                point1 = pointer1.next;
+                point2 = pointer2.next;
+                pointer2.next = point1;
+                pointer1.next = pointer2;
 
-            pointer1 = point1;
-            pointer2 = point2;
-        }
-        if (pointer2.next == null) {pointer2.next = pointer1.next;pointer1.next = pointer2;}
-        if (pointer1.next == null) {pointer1.next = pointer2;}
+                pointer1 = point1;
+                pointer2 = point2;
+            }
+            if (pointer2.next == null) {
+                pointer2.next = pointer1.next;
+                pointer1.next = pointer2;
+            }
+            if (pointer1.next == null) {
+                pointer1.next = pointer2;
+            }
 //        System.out.println(second);// just to see the different
-        return first;
-
+            return first;
+        } catch (NullPointerException a) {
+            System.out.println("empty lists");
+        }
+return second;
     }
     }
     
