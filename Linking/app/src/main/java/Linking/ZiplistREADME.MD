@@ -7,7 +7,8 @@ Try and keep additional space down to O(1)
 You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 ## Whiteboard Process
 
-![zipList](https://user-images.githubusercontent.com/97823170/158064760-5b18fd1d-dc2a-437d-a988-08f7f456bc14.png)
+![ziplist2](https://user-images.githubusercontent.com/97823170/159120280-c5db84a1-e0d1-416a-b8c3-6e00da3d3aca.png)
+
 
 ## Approach & Efficiency
  What is the Big O space/time for this approach?
