@@ -49,5 +49,4 @@ adds a new node with the given new value immediately after the first node that h
 ## Approach & Efficiency
 O(N)
 
-## Solution
-[](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/main/Linking/app/src/main/java/Linking/LinkedList.java)
+## Solution [link](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/main/Linking/app/src/main/java/Linking/LinkedList.java)
