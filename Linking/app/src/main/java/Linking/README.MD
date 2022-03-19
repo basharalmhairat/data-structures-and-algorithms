@@ -50,4 +50,4 @@ adds a new node with the given new value immediately after the first node that h
 O(N)
 
 ## Solution
-[]()
+[](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/main/Linking/app/src/main/java/Linking/LinkedList.java)
