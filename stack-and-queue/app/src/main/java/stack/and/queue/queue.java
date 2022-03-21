@@ -1,7 +1,7 @@
 package stack.and.queue;
 
 public class queue<T> {
-    private Node<T> front;
+    Node<T> front;
     private Node<T> back;
 
     public void enqueue(T value){
