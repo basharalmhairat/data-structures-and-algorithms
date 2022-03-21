@@ -17,4 +17,4 @@ T:O(1)
 S:(n)
 
 ## Solution
-[link](java/stack/and/queue/animalShelter)
+[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/stack-and-queue/app/src/main/java/stack/and/queue/animalShelter)
