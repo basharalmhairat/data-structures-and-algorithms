@@ -13,8 +13,7 @@
 | insert after and befor | [link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/Linking) |
 | Zip list | [link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/Linking) |
 |fifo animal shelter|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/stack-and-queue/app/src/main/java/stack/and/queue/animalShelter)|
-[stack-queue-brackets](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/stack-and-queue/app/src/main/java/stack/and/queue/brackets)
-
+|stack-queue-brackets|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/stack-and-queue/app/src/main/java/stack/and/queue/brackets)|
 
 
 
