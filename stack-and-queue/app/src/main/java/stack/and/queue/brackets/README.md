@@ -10,8 +10,8 @@ Square Brackets : []
 Curly Brackets : {}
 
 ## Whiteboard Process
+![brackets](https://user-images.githubusercontent.com/97823170/160243282-dcc4c80b-ffcf-4e14-8f57-33faf494f364.png)
 
-![](../../../../../../../../../../../Desktop/whiteboard/brackets.png)
 ## Approach & Efficiency
 O(n)
 
