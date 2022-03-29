@@ -82,4 +82,15 @@ binarySearchTree.add(1);
         assertEquals( "[1, 2, 4, 3]", Arrays.toString(binarySearchTree.postOrder()));
 
     }
+    @Test
+    public void testMaxValue() {
+        BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
+        binarySearchTree.add(10);
+        binarySearchTree.add(22);
+        binarySearchTree.add(44);
+        binarySearchTree.add(11);
+
+        assertEquals( "[44]", Arrays.toString(new int[]{binarySearchTree.MaxiValue(binarySearchTree)}));
+
+    }
 }
