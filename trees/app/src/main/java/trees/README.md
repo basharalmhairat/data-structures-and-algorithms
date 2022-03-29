@@ -34,3 +34,22 @@ Define a method for each of the depth first traversals:
 pre-order
 in order
 post order which returns an array of the values, ordered appropriately.
+
+
+# Challenge Summary
+Write the following method for the Binary Tree class
+
+find maximum value
+Arguments: none
+Returns: number
+Find the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
+
+## Whiteboard Process
+![](../../../../../../../../Desktop/whiteboard/maxTrees.png)
+
+## Approach & Efficiency
+S:O(1)
+T:O(n)
+
+## Solution
+[link](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/fa5f4f9b2ea2c237e370cdc5fe5580dc4cdb1108/trees/app/src/main/java/trees/BinaryTree.java)

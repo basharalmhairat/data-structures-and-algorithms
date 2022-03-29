@@ -87,5 +87,31 @@ public class BinaryTree <Type>
         return this.root;
     }
 
+    public int MaxiValue(BinaryTree<Integer> tree)
+    {
+        int maxValue = recursiveMaxValue(tree.root);
+        return maxValue;
+    }
 
+    private int recursiveMaxValue(Node<Integer> currentNode)
+    {
+        int maxValue = 0;
+
+        if (currentNode != null)
+        {
+            maxValue = currentNode.dataValue;
+            int leftMax = recursiveMaxValue(currentNode.leftChild);
+            int rightMax = recursiveMaxValue(currentNode.rightChild);
+
+            if (leftMax > maxValue)
+            {
+                maxValue = leftMax;
+            }
+            if (rightMax > maxValue)
+            {
+                maxValue = rightMax;
+            }
+        }
+        return maxValue;
+    }
 }
