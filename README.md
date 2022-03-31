@@ -16,6 +16,6 @@
 |stack-queue-brackets|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/stack-and-queue/app/src/main/java/stack/and/queue/brackets)|
 |trees|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/trees)|
 |maxTrees|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/trees)|
-
+|BreadthFirstSearchTrees|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/trees)|
 
 
