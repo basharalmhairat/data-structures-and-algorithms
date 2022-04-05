@@ -10,7 +10,7 @@ If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
 If the value is not divisible by 3 or 5, simply turn the number into a String.
 
 ## Whiteboard Process
-![](../../../../../../../../../Downloads/Whiteboard (2).png)
+![Whiteboard (2)](https://user-images.githubusercontent.com/97823170/161704803-504d3475-e6c4-44ab-ad1e-03115f443af0.png)
 
 
 ## Approach & Efficiency
