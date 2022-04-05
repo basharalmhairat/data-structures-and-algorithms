@@ -17,5 +17,5 @@
 |trees|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/trees)|
 |maxTrees|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/trees)|
 |BreadthFirstSearchTrees|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/trees)|
-
+|FizzBuzz|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/main/trees/app/src/main/java/trees/fizzBuzz/FizzBuzz.java)|
 
