@@ -4,6 +4,7 @@
 package trees;
 
 import org.junit.jupiter.api.Test;
+import trees.fizzBuzz.FizzBuzz;
 
 import java.util.Arrays;
 
@@ -91,6 +92,25 @@ binarySearchTree.add(1);
         binarySearchTree.add(11);
 
         assertEquals( "[44]", Arrays.toString(new int[]{binarySearchTree.MaxiValue(binarySearchTree)}));
+
+    }
+
+ @Test
+    public void testFizzBuzz() {
+     FizzBuzz fizzBuzz= new FizzBuzz();
+        BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
+        binarySearchTree.add(10);
+        binarySearchTree.add(22);
+        binarySearchTree.add(30);
+        binarySearchTree.add(99);
+        binarySearchTree.add(11);
+        binarySearchTree.add(1);
+        binarySearchTree.add(6);
+        binarySearchTree.add(25);
+
+
+     BinarySearchTree<Integer> result = fizzBuzz.fizzBuzzTree(binarySearchTree);
+     assertEquals( "[Buzz, 1, Fizz, 22, 11, FizzBuzz, Buzz, Fizz]", Arrays.toString(result.preOrder()));
 
     }
 

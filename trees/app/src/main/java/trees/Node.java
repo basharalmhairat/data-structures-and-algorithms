@@ -1,7 +1,7 @@
 package trees;
 
 public class Node <T> {
-    T dataValue;
+    public T dataValue;
     Node <T> leftChild;
     Node <T> rightChild;
 
