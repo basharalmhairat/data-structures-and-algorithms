@@ -18,4 +18,4 @@ O(1)
 O(n)
 
 ## Solution
-[link](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/c1b078744515bde764723306f090495e1e86dcad/trees/app/src/main/java/trees/fizzBuzz)
+[link](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/main/trees/app/src/main/java/trees/fizzBuzz/FizzBuzz.java)
