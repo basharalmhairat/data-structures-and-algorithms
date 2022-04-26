@@ -18,4 +18,4 @@
 |maxTrees|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/trees)|
 |BreadthFirstSearchTrees|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/trees)|
 |FizzBuzz|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/blob/main/trees/app/src/main/java/trees/fizzBuzz/FizzBuzz.java)|
-
+|BLOGE for labe26|[link](https://github.com/basharalmhairat/data-structures-and-algorithms/tree/main/blogsMD/app/src/main/java/blogsMD/labe26)|
