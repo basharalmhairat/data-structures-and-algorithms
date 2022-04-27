@@ -4,6 +4,9 @@
 package blogsMD;
 
 import blogsMD.labe26.codeL26;
+
+import blogsMD.labe27.codeL27;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -13,13 +16,27 @@ import static org.junit.jupiter.api.Assertions.*;
 class AppTest {
 
     @Test
-    void test_Lab26() {
+
+    void test_codeChallenge26() {
        codeL26 codeL26   = new codeL26();
         int[] numArr = new int[]{8,4,23,42,16,15};
         codeL26.insertionSort(numArr);
         for (int num: numArr)
         assertTrue(true, " something went wrong ");
     }
+
+
+    @Test
+    void test_codeChallenge27() throws Exception {
+        codeL27 sut = new codeL27();
+
+        Integer[] left = new Integer[]{1, 2, 3, 4};
+        Integer[] right = new Integer[]{5,6};
+
+        assert(Arrays.toString(sut.merge(left, right)).equals("[1, 2, 3, 4, 5, 6]"));
+    }
+
+
 }
 
 
