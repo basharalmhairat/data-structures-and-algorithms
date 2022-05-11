@@ -39,7 +39,7 @@ Returns: Boolean, indicating if the key exists in the table already.
 
 Returns: Collection of keys
 
-###hash:
+### hash:
 
 Arguments: key
 Returns: Index in the collection for that key
